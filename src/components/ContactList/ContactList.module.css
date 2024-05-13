@@ -1,0 +1,10 @@
+.contContList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    user-select: none;
+}
+
+.contactItem {
+    width: calc((100% - 100px) / 5);
+}

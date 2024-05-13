@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 8px; */
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.field {
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.inpName {
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    padding: 3px 5px;
+    width: 100px;
+    margin: 0 auto;
+}
