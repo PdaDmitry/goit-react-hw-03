@@ -5,17 +5,21 @@ import contactList from '../../contactList.json';
 import { useState } from 'react';
 import css from './App.module.css';
 
-function App() {
-  const [state, setState] = useState(contactList);
+export default function App() {
+  const [contacts, setContacts] = useState(contactList);
+
+  const AddContact = newContact => {
+    setContacts(prevContacts => {
+      [newContact, ...prevContacts];
+    });
+  };
 
   return (
     <div className={css.contPhonebook}>
       <h1>Phonebook</h1>
-      <ContactForm />
+      <ContactForm onAdd={AddContact} />
       <SearchBox />
-      <ContactList contacts={state} />
+      <ContactList contacts={contacts} />
     </div>
   );
 }
-
-export default App;

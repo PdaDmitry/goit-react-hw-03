@@ -1,4 +1,5 @@
 .contContList {
+    width: 1140px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -6,5 +7,7 @@
 }
 
 .contactItem {
-    width: calc((100% - 100px) / 5);
+    width: calc((100% - 40px) / 5);
 }
+
+/* проверить */
