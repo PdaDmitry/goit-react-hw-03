@@ -7,7 +7,7 @@ import css from './App.module.css';
 
 export default function App() {
   const [filter, setFilter] = useState('');
-  // const [contacts, setContacts] = useState(contactList);
+
   const key = 'saved-contact';
   const [contacts, setContacts] = useState(() => {
     const savedObject = window.localStorage.getItem(key);
